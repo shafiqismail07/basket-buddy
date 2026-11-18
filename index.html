@@ -32,7 +32,7 @@ const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'
 const uid=()=>crypto.randomUUID?crypto.randomUUID():Math.random().toString(36).slice(2)+Date.now();
 const now=()=>Date.now();
 const pretty=t=>new Date(t||now()).toLocaleDateString('en-MY',{day:'numeric',month:'short',year:'numeric'});
-const units=['pcs','biji','kg','g','gram','botol','packet','kotak','tin','liter','ml','ikat','bungkus','tray','dozen','other'];
+const units=['pcs','biji','kg','g','botol','packet','kotak','tin','liter','ml','ikat','bungkus','tray','dozen','other'];
 const categories=['Vegetables','Fruits','Meat & Seafood','Dairy & Eggs','Pantry','Drinks','Frozen','Household','Other'];
 const KEY='basketbuddy_v1';
 // Owner setup: this constant is written automatically by the Configure & Download button.
